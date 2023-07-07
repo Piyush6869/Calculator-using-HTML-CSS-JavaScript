@@ -1,37 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Crimson+Text:wght@600&family=Dancing+Script:wght@600&family=Montserrat:wght@500&family=Open+Sans:wght@500&family=Quicksand:wght@700&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Crimson+Text:wght@600&family=Dancing+Script:wght@600&family=Montserrat:wght@500&family=Open+Sans:wght@500&family=Quicksand:wght@700&display=swap');
-html 
-{
-  height: 100%;
+body {
+  height: 100vh;
   width: 100%;
   font-family: 'Quicksand', sans-serif;
-
 }
-button{
-  padding:25px ;
-  margin:0px 11px ;
-  border: 2px solid black ;
+
+button {
+  padding: 25px;
+  /* margin: 0px 11px; */
+  border: 2px solid black;
   border-radius: 9px;
   cursor: pointer;
-  width: 66vw;
 }
-.row{
-  margin:8px 0px;
-  width: 29vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.row input{
-  width: 333px;
+
+input {
   font-size: 22px;
-    margin: 4px;
-    padding: 20px 48px;
-    border: 2px solid black;
-    border-radius: 5px;
+  padding: 20px 48px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-bottom: 8px;
 }
-button:hover{
+
+button:hover {
   background-color: rgb(77 81 81 / 31%);
 }
-  
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 11px;
 }

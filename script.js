@@ -1,4 +1,4 @@
-et buttons = document.querySelectorAll('.button');
+const buttons = document.querySelectorAll('.button');
 const input = document.querySelector('input')
 Array.from(buttons).forEach((button) => {
     button.addEventListener('click', (e) => {
@@ -17,11 +17,9 @@ Array.from(buttons).forEach((button) => {
                     (str.split('(').length - str.split(')').length) > 0
                 ) {
                     input.value += ')'
-                    console.log('this')
                 }
                 else {
                     input.value += '('
-                    console.log('this2')
                 }
                 break
             default:
