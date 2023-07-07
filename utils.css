@@ -1,23 +1,32 @@
-.text-center {
+.text-center{
   text-align: center;
 }
 
-.mx-auto {
+.mx-auto
+{
   margin: auto;
+  
 }
-
-.flex {
+.flex{
   display: flex;
-
+  
 }
-
-.flex-col {
+.flex-col{
   flex-direction: column;
 }
-
-.items-center {
-  display: flex;
-  justify-content: center;
+.items-center{
   align-items: center;
-  flex-direction: column;
 }
+.container{
+    width: 36%;
+    height:50%;
+    background: #eae5ff;
+    align-items: center;
+   justify-content: center;
+    }
+  .calculator{
+    background-image: linear-gradient(rgb(47, 135, 157),rgb(69, 3, 104));
+    padding: 20px;
+    border-radius: 10px;
+    color: antiquewhite;
+  }
