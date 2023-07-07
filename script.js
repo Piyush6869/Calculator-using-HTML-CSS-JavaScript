@@ -1,4 +1,5 @@
 const buttons = document.querySelectorAll('.button');
+const back_buttons = document.querySelector('.back-button');
 const input = document.querySelector('input')
 Array.from(buttons).forEach((button) => {
     button.addEventListener('click', (e) => {
@@ -27,3 +28,7 @@ Array.from(buttons).forEach((button) => {
         }
     });
 });
+
+back_buttons.addEventListener("click", (e) => {
+    input.value = input.value.substring(0, input.value.length-1)
+})
