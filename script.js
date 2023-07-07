@@ -1,5 +1,4 @@
-const buttons = document.querySelectorAll('.button');
-const back_buttons = document.querySelector('.back-button');
+let buttons = document.querySelectorAll('.button');
 const input = document.querySelector('input')
 Array.from(buttons).forEach((button) => {
     button.addEventListener('click', (e) => {
@@ -18,17 +17,18 @@ Array.from(buttons).forEach((button) => {
                     (str.split('(').length - str.split(')').length) > 0
                 ) {
                     input.value += ')'
+                    console.log('this')
                 }
                 else {
                     input.value += '('
+                    console.log('this2')
                 }
-                break
+                break;
+                 case 'DE':
+                input.value = input.value.slice(0, -1);
+                break;
             default:
                 input.value += e.target.innerHTML;
         }
     });
 });
-
-back_buttons.addEventListener("click", (e) => {
-    input.value = input.value.substring(0, input.value.length-1)
-})
